@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {background-color: lightslategray}
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+<h2>Here is my Resume, Cover Letter, and Elevator Pitch</h2>
+
+<div class="row">
+  <div class="column" style="background-color:blue ;">
+    <h2>Resume</h2>
+    <img src="Resume.png"
+    alt="My SQL"
+    width="200" "height="50">
+</div>
+  <div class="column" style="background-color: lightblue">
+    <h2>Cover Letter</h2>
+    <img src="CoverLetter.png"
+    alt="My SQL"
+    width="200" "height="150">
+</div>
+  <div class="column" style="background-color:blue;">
+    <h2>Elevator Pitch</h2>
+    <img src="Pitch.png"
+    alt="My SQL"
+    width="250" "height="200"> 
+</div>
+</div>
+<br>
+<button onclick="myFunction()">Print this page</button>
+
+<script>
+function myFunction() {
+  window.print();
+}
+</script>
+
+</body>
+</html>

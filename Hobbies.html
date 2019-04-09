@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {background-color: lightslategray}
+* {
+  box-sizing: border-box;
+}
+table   {margin: auto;
+        border: 20px green;
+        width: 750px;
+        }
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+</style>
+</head>
+<body>
+    <form method="post" action="http://webdevbasics.net/scripts/demo.php">
+<h2>Here are my Hobbies</h2>
+
+<div class="row">
+  <div class="column" style="background-color:green ;">
+    <h2>Golf</h2>
+    <p>Golf is my favorite hobby and the one that I am the most passionate about. <br> The coolest place that I have golfed is in Las Vegas and the course was in between mountains. <br> Also I am the Vice President of the Club Golf Team here!  </p>
+    <img src="IMG_3280.jpg"
+    alt="My SQL"
+    width="200" "height="50">
+</div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Cooking</h2>
+    <p>I really enjoy cooking for my family and friends whenever I can. <br> Cooking is a great thing to bring people together.  <br> My favorite thing to cook is anything on the grill, especially steak.</p>
+    <img src="Steak.jpg"
+    alt="My SQL"
+    width="200" "height="50">
+</div>
+  <div class="column" style="background-color:green ;">
+    <h2>Gambling</h2>
+    <p>Gambling is another hobby of mine. <br> The rush you get from betting big is unmatched. <br> My favorite games to play are Texas Hold'em, Blackjack, and Slots.</p>
+    <img src="Poker.jpg"
+    alt="My SQL"
+    width="150" "height="30"> 
+</div>
+</div>
+<table border="1">
+  <caption><b>My best Golf Rounds:</b></caption>
+  <tr>
+      <th>Score</th>
+      <th>Course</th>
+  </tr>
+  <tr>
+      <td>69</td>
+     <td>Sycamore Golf Course</td>
+  </tr>
+  <tr>
+      <td>70</td>
+      <td>George Dunne</td>
+  </tr>
+  <tr>
+      <td>72</td>
+      <td>Harborside</td>
+  </tr>
+  <tr>
+      <td>72</td>
+      <td>Cog Hill</td>
+  </tr>
+  <tr>
+      <td>73</td>
+      <td>Waters Edge</td>
+  </tr>
+  <tr>
+      <td>73</td>
+      <td>Tiburon</td>
+  
+  </table>
+  <div id="grad1">
+    <p>Have you ever golfed before?<br>
+        <input type="checkbox" name = "pop" id="pop" value="yes">Yes<br>
+<input type="checkbox" name = "classical" id="class" value="yes">No<br>
+</p>
+<input type="submit"></p></div>
+</body>
+</html>
