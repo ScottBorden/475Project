@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body { background-color:gray}
+
+ * {
+  box-sizing: border-box;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; 
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h2>My Favorite Projects at NIU!</h2>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>Database Project</h2>
+    <p>This was a very fun project for me in because I got to pretty much make it my own.  I got to build a database from scratch and write really interesting queries for it. So this was definetly my favorite part of OMIS 452. 
+            <a href="DatabaseProject.html" class="w3-button w3-black">Click Here to See!</a> </p>
+    <img src="MySQL-Logo.png"
+    alt="My SQL"
+    width="200" "height="50">
+</div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Visualization Project</h2>
+    <p>This project was done in Tableau, and it was my first experience with turning big data into visuals. This project my group went to Kaggle.com and we got a data set about the NBA.  With this data we were able to use players statistics to see how likely it would be for them to win player of the week. 
+    <br>
+      <a href="VisualizationProject.html" class="w3-button w3-black">Click Here to See!</a> </p>
+    <img src="Tableau-software-logo.png"
+    alt="My SQL"
+    width="200" "height="50">
+</div>
+</div>
+<p><a href="WebPresenceHomepage.html">Click here to go back to the Homepage!</a></p>
+</body>
+</html>
